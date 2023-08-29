@@ -10,11 +10,25 @@ def filterForHTML(filelist:list[str]) -> list[str]:
 def filterForFolder(filelist:list[str]) -> list[str]:
     return [file for file in filelist if "." not in file]
 
+def checkIfFolderHasSubfolder():
+    pass
+
+def checkIfFolderHasHtmlFile():
+    pass
+
 class folderIndex:
     def __init__(self, path: str, subfolderList:list[str] | None = None, htmlFileList:list[str] | None = None) -> None:
         self.path = path
         self.subfolderList = filterForFolder(getFilesAndFolders(path)) if subfolderList is None else subfolderList
         self.htmlFileList = filterForHTML(getFilesAndFolders(path)) if htmlFileList is None else htmlFileList
+
+    def createHtmlList(self):
+        htmlList = f'''<h1>{self.path}</h1>
+<h2>Folder</h2>
+<ul>'''
+        for i in self.subfolderList:
+            htmlList += f"<li><a href='{self.path}{i}/index.html'>{i}</a></li>"
+
 
 def main():
     path="./"
