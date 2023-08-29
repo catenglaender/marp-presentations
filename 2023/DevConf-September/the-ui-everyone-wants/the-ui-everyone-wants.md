@@ -110,9 +110,9 @@ But what about here?
 
 Which one is active?
 
-Communication problem
-* clear with more than 2 buttons
-* unclear with less than 3 buttons
+* Communication problem
+  * clear with more than 2 buttons
+  * unclear with less than 3 buttons
 
 ---
 
@@ -194,79 +194,186 @@ How did Bootstrap do it?
 
 ![](img/2023-08-29-18-55-30.png)
 
+* inset shadow is not a communication tool we yet use, it's explicitly removed in delos scss code
+
 ---
 
 Other solutions?
 
 ![](img/SegmentedControlsAndroid.png)
 
+* rounded corners communicate a elevated level - something that is rarely used in ILIAS 8
+
 ---
 
-### Experimentation in ILIAS context
+### Experimentation to definition
 
 ![width:1200px](img/ViewControlDrafts.png)
 
 ---
 
-* Frontend Developer
-  * improves the re-usable view control UI component (updates everywhere)
-  * look of viewcontrol mode is connected to button and btn-group style code
+### Tests/Mockups
+
+![](img/ViewControlTest.png)
+
+---
+![bg left](img/hat_programmer.jpg)
+## (Frontend) Developer(s)
+
+* creates the actual code that makes this UI component appear in ILIAS
+
+---
+
+### Exploration / Strategy
+
+php: not much to explore
+* ViewControl Mode already is a modern UI component, part of the Kitchen Sink
+* views and components already use it, so construction should stay the same
+* the need to change it is purely visual
+* (for now)
+
+---
+
+sass: more decisions to make
+* bootstrap has been removed in ILIAS 9, but the btn-group that this is based on has been integrated into delos
+* php UI components are not equal scss components/layout/tools
+* usually buttons are created by a button variant mixin inside the button. Do we have a new button type here?
+
+---
+
+# Definition / Decision
+
+* new button type
+* making use of the new ITCSS structure in ILIAS 9
+
+---
+
+![bg left:33% fit](img/2023-08-29-20-26-59.png)
+
+Places where we might need to change something
+* Settings layer
+* Button component
+* maybe small changes to viewcontrol component
+* HTML Template
+
+---
+
+![](img/2023-08-29-20-37-55.png)
+
+---
+
+070-components/UI-framework/Button
+
+```scss
+.btn-primary {
+  @include make-button($set-basics: false, $set-design: true,
+    $button-color: s.$il-btn-primary-bg,
+
+    $bg-color: s.$il-btn-primary-bg,
+    $text-color: s.$il-btn-primary-color,
+    $border-color: s.$il-btn-primary-border,
+
+    $disabled_bg-color: s.$il-disabled-btn-bg,
+    $disabled_text-color: s.$il-disabled-btn-color,
+    $disabled_border-color: s.$il-disabled-btn-border,
+    
+    $engaged_bg-color: $il-engaged-btn-bg,
+    $engaged_text-color: $il-engaged-btn-color,
+    $engaged_border-color: s.$il-btn-primary-border,
+    $engaged_border-width: 1px);
+}
+
+.btn-ctrl {
+  @include make-button($input-field-height: s.$il-btn-ctrl-outer-height,
+    $border-radius: s.$il-border-radius-secondary-large,
+    
+    $button-text-color: s.$il-btn-ctrl-color,
+    $button-color: s.$il-btn-ctrl-bg,
+    $border-color: s.$il-btn-ctrl-border);
+  &.engaged,
+  .open & {
+    border: 1px solid s.$il-btn-ctrl-engaged-border;
+    background-color: s.$il-main-bg;
+  }
+  .open & {
+    box-shadow: none;
+  }
+}
+```
+
+---
+
+![bg right 80%](img/hat_designer.jpg)
+### also... Accessibility
+
+* let's put the designer hat back on for a second
+
+---
+
+![](img/ViewControlTest.png)
+
+* contrast is not the best
+
+---
+
+Final Implementation has an extra outline
+
+* normal vision: ![](img/ViewControl-Mode-final.png)
+* high contrast: ![](img/ViewControl-Mode-final-high-contrast.png)
+
+---
+
+## New Discovery
+
+It's good that UI components get less visual priority than buttons
+
+![](img/Kalender%20ViewControls%20Neu.png)
 
 ---
 
 <!-- _class: chapter-01 -->
 
-# **Designer Hat**
+# **Guidelines that worked well for us**
 
 ---
 
+## General
 
-
----
-
-
-
----
-
-## When are users happy?
-
-If they...
-* easily
-* get what they want
-* how they think it should work
-
---- 
-
-### "Get what they want"
-
-User Intent
-
-* usually easy to define
-* Examples
-  * add a user
-  * pass a course
-  * see test results for class
-  * copy and paste a page editor block
+* What proven UI/UX principles, code structure and testing data can we use instead of just our gut instinct?
+* Is what we are working on part of a larger pattern?
+* Is there something that already exists that we can use instead of introducing something new?
+* What implications might the change have? Best case? Worst case?
 
 ---
 
-Layers to user intent
+## User perspective
 
-* pass a course
-  * find the course
-  * register
-  * navigate course content
-  * find the course to continue it
-  * pass or fail (knowing the result)
-  * find a certificate / report
-
----
-
-Other users access the same location in ILIAS but have a completely different user intent:
-
-* updating a worksheet
-  * 
+* What types of users see this screen?
+* What is the user intent of each of these user types?
+* Does the way how something works match the user's expectation of how it should work (mental model)?
+* What is the most frequent user intent? Is it visually more prominent?
+* Can we identify a user with a specific user intent and only show them what they need?
+* If users voiced a suggestion is it actually the solution to the issue they are having?
+* Does the user have an issue with the specific view or with a pattern?
 
 ---
 
-### Easily
+## Designer perspective
+
+* What apps solve this issue well? Is there a known mental model that we can match?
+* Is there a design pattern in delos that we can use?
+* What is every single design choice communicating?
+* Does a design choice help or harm a specific and/or the most frequent user intent?
+* Is there a visual hierachy? Does it match the hierachy of user intents?
+* Are there visual groups?
+* Can the groups be semantic instead of type groups?
+
+---
+
+## Frontend Developer perspective (SCSS)
+
+* Is there existing code/mixins/tools we can use?
+* Where in the ITCSS structure does this fit?
+* Can we introduce a more general setting variable, tool or layout component instead of component specific code?
+* Do we really need to override somnething or can we fix what we are overriding?
+* Can this be overidden by a custom system style (skin)?
