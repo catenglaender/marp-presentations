@@ -150,7 +150,7 @@ To find a satisfying solution let's wear all the different hats:
 
 ---
 
-### Expoloration
+### Exploration
 
 * Collecting many possible approaches
 * Because the first idea is rarely the best
@@ -158,11 +158,15 @@ To find a satisfying solution let's wear all the different hats:
 
 ---
 
-Sometimes it's a good brainstorming technique to think about, what we don't want
+### Good brainstorming technique
+
+Think about, what we don't want
 
 ![bg left:33% fit 90%](./img/advanced-volume-control.webp)
 
 ---
+
+### Our options
 
 * Changing the look of the btn-default engaged
 * Switching to a different look when less than three buttons
@@ -303,7 +307,7 @@ Places where we might need to change something
 
 ---
 
-![bg right 80%](img/hat_designer.jpg)
+![bg right](img/hat_designer.jpg)
 ### also... Accessibility
 
 * let's put the designer hat back on for a second
@@ -331,6 +335,31 @@ It's good that UI components get less visual priority than buttons
 
 ---
 
+![bg left](img/hat_programmer.jpg)
+
+## When reality is catching up
+
+Developer hat back on...
+
+---
+
+Still a lot to be improved around ViewControls
+
+* the Kitchen Sink buttons do not know the button btn-ctrl, maybe a context renderer could always output btn-ctrl if buttons are rendered inside viewcontrols?
+* some View Controls use Kitchen Sink button defaults, other construct dropdowns through html templates that look like buttons, but are technically their very own specific construct
+* ViewControls in panels have to get their final styling soon
+* Input ViewControls present a better way to collect and send the settings of many ViewControls
+
+---
+
+## Result
+
+* User: Can now differentiate active/inactive mode
+* Designer: Has new approaches to clarify the visual hierachy of ViewControls in general
+* Frontend Developer: Structure and use of mixins make it easy to find, improve and re-use this new button type in the future
+
+---
+
 <!-- _class: chapter-01 -->
 
 # **Guidelines that worked well for us**
@@ -340,6 +369,7 @@ It's good that UI components get less visual priority than buttons
 ## General
 
 * What proven UI/UX principles, code structure and testing data can we use instead of just our gut instinct?
+* Who can contribute their knowledge, skills and perspective to move this project forward?
 * Is what we are working on part of a larger pattern?
 * Is there something that already exists that we can use instead of introducing something new?
 * What implications might the change have? Best case? Worst case?
@@ -376,4 +406,4 @@ It's good that UI components get less visual priority than buttons
 * Where in the ITCSS structure does this fit?
 * Can we introduce a more general setting variable, tool or layout component instead of component specific code?
 * Do we really need to override somnething or can we fix what we are overriding?
-* Can this be overidden by a custom system style (skin)?
+* Can this be (easily) overidden by a custom system style (skin)?
