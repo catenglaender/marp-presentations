@@ -11,15 +11,31 @@ We use VSCode and the official marp extension to export the finished presentatio
 
 You can write your presentation in any text editor you would like. However, VSCode does offer a nice live preview that you can access by clicking the preview icon in the top right corner or press Ctrl + K, then V.
 
+![Marp Preview in VSCode](example-img/vscode-marp_preview.png)
+
+## Set up for your own presentation
+
 Fork and branch this repo and use example.md as a base for your next presentation. You need to keep themes/, img/, fonts/, .vscode/ and their contents for the cate-theme to work.
 
-You can export your presentation as static HTML that no longer needs VSCode running by opening VSCode's command palette with Ctrl + P and start typing ">Marp: Export Slide Deck...". In the following dialog select HTML as the export format.
+## Export as html file
+
+You can export your presentation as static HTML that no longer needs VSCode running by clicking on the marp icon in the top left corner or by opening VSCode's command palette with Ctrl + P and start typing ">Marp: Export Slide Deck...".
+
+![Marp Export in VSCode](example-img/vscode-marp_export.png)
+
+In the following dialog select HTML as the export format. Make sure the file name also has .html in the name and not .pdf.
 
 If you distribute or upload the presentation, you need to keep the html file and the folders img/ and fonts/ inside the same location.
 
-If you have difficulties exporting PDF, make an HTML export, open in the browser, start printing with Ctrl + P and choose "Save as PDF". The PDF is of course completely standalone and doesn't require any other files.
+## Export as pdf file
+
+PDF export works basically the same as exporting HTML.
+
+If you get an error message while exporting PDF, you can make an HTML export instead, open it in the browser, start printing with Ctrl + P and choose "Save as PDF". The PDF is of course completely standalone and doesn't require any other files.
 
 ## Making a presentation
+
+You can find a complete overview of the marp specific markdown syntax in the official documentation: https://marpit.marp.app/markdown
 
 ### Front Matter
 
@@ -33,7 +49,7 @@ Header, footer and pagination can be set to your liking.
 marp: true
 theme: cate-theme
 paginate: false
-header: ILIAS DevConf September 2023
+header: ILIAS DevConf September 2023 | cate-tms.de
 footer: No ILIAS on a dead planet.
 
 ---
@@ -87,13 +103,11 @@ The underscore in `_class` scopes this template style for this current slide onl
 
 See example.md for some example code of how to deal with images.
 
-If you add more images you may want to place them in img/.
+If you add more images you may want to place them in the img/ folder. This way you can grab them together with the logo files that are already stored there when you distribute the presentation.
 
-### Live Preview
+Background images should be at least 1080 px high to not look pixelated. However, an image that is 720 px high will already fill 100% height of the slide as marp assumes a coordinate system of 1280 x 720 units.
 
-You can use Visual Studio Code (https://snapcraft.io/code) and the marp extension (https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) to get a live preview while you edit your presentation.
-
-You can branch this repo as a basis, because you need themes/, img/, fonts/, .vscode/ and their contents for the cate-theme to work.
+All information for how to deal with images both inline and for the slide background can be found in the marp documentation: https://marpit.marp.app/image-syntax
 
 ## (Re-)compiling the theme
 
