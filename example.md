@@ -37,6 +37,7 @@ Keep the headlines inside the `**` bold markdown - it's important for the css co
 ### An interesting thing to talk about
 
 * with this very important point to consider
+  * and a nested bullet point here
 * and here is another one that needs a couple lines of text to really make clear what it is all about and why whe whould consider this
 * three bullet points is a good amount of bullet points for a slide
 
@@ -123,3 +124,64 @@ public function getRows(
 Images can be resized:
 
 ![w:600](example-img/screenshot_item.png)
+
+---
+
+<!-- _class: invert-bg -->
+
+# A cozy dark version of a content slide
+
+* for a cozy darkmode feel
+* also perfect for dark images as backgrounds
+  * even with nested bullet points
+
+---
+
+<!-- _class: invert-bg -->
+
+![bg](example-img/pexels-stein-egil-liland-3374210.jpg)
+
+# A cozy dark version of a content slide
+
+* for a cozy darkmode feel
+* also perfect for dark images as backgrounds
+  * even with nested bullet points
+---
+
+<!-- _class: title-02 -->
+
+## **Just as an alternative cover**
+
+# **Here is template title-02 for the purists**
+
+<!-- There should be no paragraph text on this title slide - only one h1 and h2 each.
+
+Keep the headlines inside the `**` bold markdown - it's important for the css code of this slide type to work. -->
+
+---
+
+<!-- _class: title-02 -->
+
+![bg](./example-img/pexels-bruno-thethe-1910236.jpg)
+
+## **Perfect for background images**
+
+# **Use title-02 to put any background underneath**
+
+<!-- There should be no paragraph text on this title slide - only one h1 and h2 each.
+
+Keep the headlines inside the `**` bold markdown - it's important for the css code of this slide type to work. -->
+
+---
+
+<!-- _class: title-02--invert-footer -->
+
+![bg](./example-img/pexels-bruno-thethe-1910236.jpg)
+
+## **Backgroudn too dark?**
+
+# **Use title-02--invert-footer to make the footer pop again**
+
+<!-- There should be no paragraph text on this title slide - only one h1 and h2 each.
+
+Keep the headlines inside the `**` bold markdown - it's important for the css code of this slide type to work. -->
