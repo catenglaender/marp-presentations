@@ -115,6 +115,8 @@ section::after {
 
 // li bullet points fade effect
 
+
+
 @if $fade-inactive-bullets-to-gray {
     li:not([data-bespoke-marp-current-fragment="current"]) {
         color: rgba($cat-text-color, 0.4);
@@ -122,6 +124,24 @@ section::after {
     li:not([data-bespoke-marp-current-fragment="current"]) > ul > li[data-bespoke-marp-current-fragment="current"] {
         color: $cat-text-color;
     }
+    .code-line li {
+        color: $cat-text-color !important;
+    }
+    section.invert-bg {
+        li {
+            color: $cat-text-color-invert;
+        }
+        li:not([data-bespoke-marp-current-fragment="current"]) {
+            color: rgba($cat-text-color-invert, 0.4);
+        }
+        li:not([data-bespoke-marp-current-fragment="current"]) > ul > li[data-bespoke-marp-current-fragment="current"] {
+            color: $cat-text-color-invert;
+        }
+        .code-line li {
+            color: $cat-text-color-invert !important;
+        }
+    }
+    
 }
 
 // animation templates
@@ -136,19 +156,17 @@ section::after {
 }
 
 //
-// SLIDES WITH NO MARGIN HEADLINES
+// SLIDES WITH NO LEFT MARGIN HEADLINES
 //
 
 section.title-01,
-section.title-02 {
-    &,
-    &--white-text {
-        h1, h2 {
-            margin-left: -80px;
-        }
-        h1 strong, h2 strong {
-            padding-left: 40px;
-        }
+section.title-02,
+section.title-02--invert-footer {
+    h1, h2 {
+        margin-left: -80px;
+    }
+    h1 strong, h2 strong {
+        padding-left: 40px;
     }
 }
 
@@ -158,18 +176,17 @@ section.title-02 {
 
 section.title-01,
 section.title-02,
+section.title-02--invert-footer,
 section.chapter-01,
 section.chapter-02 {
-    &,
-    &--white-text {
-        h1 + h2 {
-            margin-top: -30px;
-        }
-        h2 + h1 {
-            margin-top: -30px;
-        }
+    h1 + h2 {
+        margin-top: -30px;
+    }
+    h2 + h1 {
+        margin-top: -30px;
     }
 }
+
 
 //
 // SLIDES WITH INVERTED COLOR
@@ -218,13 +235,14 @@ section.chapter-02 {
 
 section.chapter-01,
 section.chapter-02,
-section.title-01 {
+section.title-01,
+section.invert-bg {
     @include invert-text-color()
 }
 
 // these slides can optionally have white text in header/footer (e.g. with a dark bg image)
 
-section.title-02--white-text {
+section.title-02--invert-footer {
     @include invert-footer-header-color()
 }
 
@@ -255,6 +273,10 @@ section.chapter-02 {
         background-color: rgba($cat-bg-color, .2);
         color: $cat-text-color-invert;
     }
+}
+
+section.invert-bg {
+    --color-canvas-default: #{$cat-darkgray};
 }
 
 //

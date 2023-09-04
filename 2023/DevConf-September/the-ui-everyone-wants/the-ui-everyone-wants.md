@@ -38,7 +38,7 @@ footer: No ILIAS on a dead planet.
 
 ![bg left fit](img/thought_controlled_music_player.jpg)
 
-Mind Reading Interface
+## Mind Reading Interface
 
 * just think "register me" and it happens
 * no need to type your own name on a keyboard
@@ -46,7 +46,7 @@ Mind Reading Interface
 
 ---
 
-Graphical User Interfaces are always a compromise
+## GUIs are always a compromise
 
 * finding the correct button always takes effort
 * and all other buttons that we are currently not looking for are technically in the way
@@ -59,11 +59,11 @@ So maybe the title of this presentation should be different
 
 ---
 
-Sources of frustration
+## Sources of frustration
 
-* users will always have to look for something and learn how to use an interface (even if it's brief)
-* designers will always have designs they aesthetically like more, but that are too impractical for users or not technologically feasable
-* (frontend) developers often need to settle with "good enough for now" and the jungle of decade old code from hundreds of contributers
+* **users** will always have to look for something and learn how to use an interface (even if it's brief)
+* **designers** will always have designs they aesthetically like more, but that are too impractical for users or not technologically feasable
+* **(frontend) developers** often need to settle with "good enough for now" and the jungle of decade old code from hundreds of contributers
 
 ---
 
@@ -194,7 +194,7 @@ Think about, what we don't want
 
 ---
 
-How did Bootstrap do it?
+#### How did Bootstrap do it?
 
 ![](img/2023-08-29-18-55-30.png)
 
@@ -202,7 +202,7 @@ How did Bootstrap do it?
 
 ---
 
-Other solutions?
+#### Other solutions?
 
 ![](img/SegmentedControlsAndroid.png)
 
@@ -245,7 +245,7 @@ sass: more decisions to make
 
 ---
 
-# Definition / Decision
+### Definition / Decision
 
 * new button type
 * making use of the new ITCSS structure in ILIAS 9
@@ -254,7 +254,8 @@ sass: more decisions to make
 
 ![bg left:33% fit](img/2023-08-29-20-26-59.png)
 
-Places where we might need to change something
+### Places for changes
+
 * Settings layer
 * Button component
 * maybe small changes to viewcontrol component
@@ -308,7 +309,7 @@ Places where we might need to change something
 ---
 
 ![bg right](img/hat_designer.jpg)
-### also... Accessibility
+## also... Accessibility
 
 * let's put the designer hat back on for a second
 
@@ -327,7 +328,7 @@ Final Implementation has an extra outline
 
 ---
 
-## New Discovery
+### New Discovery
 
 It's good that UI components get less visual priority than buttons
 
@@ -347,7 +348,7 @@ Still a lot to be improved around ViewControls
 
 * the Kitchen Sink buttons do not know the button btn-ctrl, maybe a context renderer could always output btn-ctrl if buttons are rendered inside viewcontrols?
 * some View Controls use Kitchen Sink button defaults, other construct dropdowns through html templates that look like buttons, but are technically their very own specific construct
-* ViewControls in panels have to get their final styling soon
+* View Controls in panel header have to get tweaked styling
 * Input ViewControls present a better way to collect and send the settings of many ViewControls
 
 ---
@@ -360,9 +361,48 @@ Still a lot to be improved around ViewControls
 
 ---
 
+## "But we don't have time to make UI concepts"
+
+* looks like a lot
+* ViewControl Mode update  2 days spread out over two weeks
+  * incl. discussion in UI Clinic > mockups > realizing ViewControls are different from default buttons > collecting feedback > implementation
+* saves time compared to:
+  *  implementation > negative feedback > implementing something else > new idea > implementing something else
+
+---
+
 <!-- _class: chapter-01 -->
 
-# **Guidelines that worked well for us**
+# **Honorable Mentions**
+
+---
+
+## Data Table
+---
+
+### Column types
+
+![](img/2023-09-04-18-30-09.png)
+
+---
+
+### Sticky header
+
+![](./img/data-table_sticky.gif)
+
+---
+
+### Catch many lines of text
+
+![](img/2023-09-04-18-39-04.png)
+
+---
+
+<!-- _class: chapter-01 -->
+
+# **Asking these questions worked well for us**
+
+## **Download: bit.ly/ilias-ui-questions**
 
 ---
 
@@ -381,10 +421,11 @@ Still a lot to be improved around ViewControls
 * What types of users see this screen?
 * What is the user intent of each of these user types?
 * Does the way how something works match the user's expectation of how it should work (mental model)?
-* What is the most frequent user intent? Is it visually more prominent?
+* **What is the most frequent user intent? Is it visually more prominent?**
 * Can we identify a user with a specific user intent and only show them what they need?
 * If users voiced a suggestion is it actually the solution to the issue they are having?
 * Does the user have an issue with the specific view or with a pattern?
+* What could the user do to break this?
 
 ---
 
@@ -395,8 +436,8 @@ Still a lot to be improved around ViewControls
 * What is every single design choice communicating?
 * Does a design choice help or harm a specific and/or the most frequent user intent?
 * Is there a visual hierachy? Does it match the hierachy of user intents?
-* Are there visual groups?
-* Can the groups be semantic instead of type groups?
+* Are there visual groups? Use chunking because of Miller's law
+* **Can the groups be semantic instead of type groups?**
 
 ---
 
@@ -404,6 +445,19 @@ Still a lot to be improved around ViewControls
 
 * Is there existing code/mixins/tools we can use?
 * Where in the ITCSS structure does this fit?
-* Can we introduce a more general setting variable, tool or layout component instead of component specific code?
+* **Can we introduce a more general setting variable, tool or layout component instead of component specific code?**
 * Do we really need to override somnething or can we fix what we are overriding?
 * Can this be (easily) overidden by a custom system style (skin)?
+* What consumer code could break this?
+
+---
+
+<!-- _class: chapter-02 -->
+
+## **Conclusion**
+
+---
+
+* everybody has an opinion about UI, so we need ways to move beyond gut feelings to stay constructive
+* UI fundamentals like mental models, user intent and semantic chunks can help make informed decisions
+* switching perspectives helps to find the best compromise that ~~everybody is happy with~~ no one is super frustrated with
