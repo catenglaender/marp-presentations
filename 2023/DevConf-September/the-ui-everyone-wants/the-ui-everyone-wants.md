@@ -82,6 +82,15 @@ Making good UI can often be about...
 
 ---
 
+### Goals for the process:
+
+* define a goal, to stay goal-oriented
+* replace feeling/opinion with proven UI concepts
+* avoid noodeling
+* avoid making somebody else's life harder
+
+---
+
 <!-- _class: chapter-01 -->
 
 # **Example**
@@ -146,14 +155,13 @@ To find a satisfying solution let's wear all the different hats:
 * diagnosis
   * user intent seems clear
   * mental model mismatch
-* needs to find a solution to visually communicate the active state more clearly
-
+* goal: find a solution to visually communicate the active state more clearly
 
 ---
 
 ### Frustrations to look out for
 
-* pretty, but unclear
+* design can be pretty, but unclear
 * anticipating limitations for implementation
 
 ---
@@ -426,8 +434,8 @@ Still a lot to be improved around ViewControls
 
 ## General
 
-* What proven UI/UX principles, code structure and testing data can we use instead of just our gut instinct?
-* **Who can _contribute_ their knowledge, skills and perspective to move this project _forward?_**
+* What proven UI/UX principles, code structure, and testing data can we use instead of just relying on our gut instinct?
+* **Who can *contribute* their knowledge, skills, and perspective to move this project *forward?***
 * Is what we are working on part of a larger pattern?
 * Is there something that already exists that we can use instead of introducing something new?
 * What implications might the change have? Best case? Worst case?
@@ -436,38 +444,38 @@ Still a lot to be improved around ViewControls
 
 ---
 
-## User perspective
+## User Perspective
 
-* What types of users see this screen and what are their possible user intents?
-* Does the way how something works match the user's expectation of how it should work (mental model)?
+* What types of users see this screen, and what are their possible user intents?
+* Does the way something works match the user's expectation of how it should work (mental model)?
 * **What is the most frequent user intent? Is it visually more prominent?**
 * Can we identify a user with a specific user intent and only (or more prominently) show them what they need?
-* If users voiced a suggestion is it actually the solution to the issue they are having?
+* If users voiced a suggestion, is it actually the solution to the issue they are having?
 * Does the user have an issue with the specific view or with a pattern?
 * How can we test/measure if the issue is resolved?
 * What could the user do to break this?
 
 ---
 
-## Designer perspective
+## Designer Perspective
 
 * What apps solve this issue well? Is there a known mental model that we can match?
-* Is there a design pattern in delos that we can use?
+* Is there a design pattern in Delos that we can use?
 * What is every single design choice communicating?
 * Does a design choice help or harm a specific and/or the most frequent user intent?
-* Is there a visual hierachy? Does it match the hierachy of user intents?
-* How can we create visual groups? 7 groups are better than 7+ ungrouped elements (Miller's law)
+* Is there a visual hierarchy? Does it match the hierarchy of user intents?
+* How can we create visual groups? Seven groups are better than seven+ ungrouped elements (Miller's law)
 * **Can the groups be semantic instead of type groups?**
 
 ---
 
-## Frontend Developer perspective (SCSS)
+## Frontend Developer Perspective (SCSS)
 
 * Is there existing code/mixins/tools we can use?
 * Where in the ITCSS structure does this fit?
-* **Can we introduce a more general setting variable, tool or layout component instead of component specific code?**
-* Do we really need to override somnething or can we fix what we are overriding?
-* Can this be (easily) overidden by a custom system style (skin)?
+* **Can we introduce a more general setting variable, tool, or layout component instead of component-specific code?**
+* Do we really need to override something, or can we fix what we are overriding?
+* Can this be (easily) overridden by a custom system style (skin)?
 * What consumer code could break this?
 
 ---
