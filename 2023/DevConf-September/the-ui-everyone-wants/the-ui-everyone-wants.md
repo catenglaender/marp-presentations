@@ -428,7 +428,7 @@ Still a lot to be improved around ViewControls
 
 # **UI questions worth considering**
 
-## **Download: bit.ly/ilias-ui-questions**
+## **Download: tinyurl.com/ilias23-ui-questions**
 
 ---
 
@@ -489,3 +489,5 @@ Still a lot to be improved around ViewControls
 * everybody has an opinion about UI, so we need ways to move beyond gut feelings to stay constructive
 * UI fundamentals like mental models, user intent and semantic chunks can help make informed decisions
 * switching perspectives helps to find the best compromise that ~~everybody is happy with~~ no one is super frustrated with
+* Presentation [tinyurl.com/ilias23-ui-everyone-wants](http://tinyurl.com/ilias23-ui-everyone-wants)
+Question PDF [tinyurl.com/ilias23-ui-questions](http://tinyurl.com/ilias23-ui-questions)
