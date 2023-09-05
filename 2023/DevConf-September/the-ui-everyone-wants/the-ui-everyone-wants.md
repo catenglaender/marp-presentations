@@ -18,9 +18,9 @@ footer: No ILIAS on a dead planet.
 
 ## What's in it for you?
 
-* approaches to better understand users, concepters, designers, frontend developers
-* ideas for your own UI concepts
-* handy checklists for your own projects
+* using the perspective of users, concepters, designers, frontend developers
+* to find the best possible solutions for your UI projects
+* handy checklist: questions worth answering
 
 ---
 
@@ -74,10 +74,10 @@ So maybe the title of this presentation should be different
 
 ---
 
-So this presentation is in large parts actually about
+Making good UI can often be about...
 
 * identifying sources of frustration with regards to using and coding the UI in ILIAS
-* evaluating what who gains what from minimizing them
+* evaluating who gains what from minimizing them
 * evaluating what effort it takes to minimize them
 
 ---
@@ -134,8 +134,8 @@ To find a satisfying solution let's wear all the different hats:
 
 ## The user
   * wants to quickly change a mode
-  * is unsure which state is currently active
-  * voiced frustrated feedback
+  * is unsure which state is currently active = frustration
+  * frustrated user feedback
 
 ---
 
@@ -147,6 +147,14 @@ To find a satisfying solution let's wear all the different hats:
   * user intent seems clear
   * mental model mismatch
 * needs to find a solution to visually communicate the active state more clearly
+
+
+---
+
+### Frustrations to look out for
+
+* pretty, but unclear
+* anticipating limitations for implementation
 
 ---
 
@@ -242,6 +250,14 @@ sass: more decisions to make
 * bootstrap has been removed in ILIAS 9, but the btn-group that this is based on has been integrated into delos
 * php UI components are not equal scss components/layout/tools
 * usually buttons are created by a button variant mixin inside the button. Do we have a new button type here?
+
+---
+
+### Frustrations to look out for
+
+* design revisions that change code
+* difficult to maintain code (structure, naming, comments)
+* unit tests
 
 ---
 
@@ -355,6 +371,8 @@ Still a lot to be improved around ViewControls
 
 ## Result
 
+![](img/ViewControl-Mode-final.png)
+
 * User: Can now differentiate active/inactive mode
 * Designer: Has new approaches to clarify the visual hierachy of ViewControls in general
 * Frontend Developer: Structure and use of mixins make it easy to find, improve and re-use this new button type in the future
@@ -400,7 +418,7 @@ Still a lot to be improved around ViewControls
 
 <!-- _class: chapter-01 -->
 
-# **Asking these questions worked well for us**
+# **UI questions worth considering**
 
 ## **Download: bit.ly/ilias-ui-questions**
 
@@ -409,22 +427,24 @@ Still a lot to be improved around ViewControls
 ## General
 
 * What proven UI/UX principles, code structure and testing data can we use instead of just our gut instinct?
-* Who can contribute their knowledge, skills and perspective to move this project forward?
+* **Who can _contribute_ their knowledge, skills and perspective to move this project _forward?_**
 * Is what we are working on part of a larger pattern?
 * Is there something that already exists that we can use instead of introducing something new?
 * What implications might the change have? Best case? Worst case?
+* What is the deadline?
+* What are measurable goals?
 
 ---
 
 ## User perspective
 
-* What types of users see this screen?
-* What is the user intent of each of these user types?
+* What types of users see this screen and what are their possible user intents?
 * Does the way how something works match the user's expectation of how it should work (mental model)?
 * **What is the most frequent user intent? Is it visually more prominent?**
-* Can we identify a user with a specific user intent and only show them what they need?
+* Can we identify a user with a specific user intent and only (or more prominently) show them what they need?
 * If users voiced a suggestion is it actually the solution to the issue they are having?
 * Does the user have an issue with the specific view or with a pattern?
+* How can we test/measure if the issue is resolved?
 * What could the user do to break this?
 
 ---
@@ -436,7 +456,7 @@ Still a lot to be improved around ViewControls
 * What is every single design choice communicating?
 * Does a design choice help or harm a specific and/or the most frequent user intent?
 * Is there a visual hierachy? Does it match the hierachy of user intents?
-* Are there visual groups? Use chunking because of Miller's law
+* How can we create visual groups? 7 groups are better than 7+ ungrouped elements (Miller's law)
 * **Can the groups be semantic instead of type groups?**
 
 ---
