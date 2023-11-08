@@ -187,7 +187,7 @@ Vergleich mit Quiz-Maker
 
 ## Tastatur Navigation
 
-* Leute, die dutzende Fragen eingeben, werden irgendwann die Tastatur nutzen wollen
+* Leute, die dutzende Fragen eingeben, werden irgendwann die Tastatur zur Navigation nutzen wollen
 
 ---
 
