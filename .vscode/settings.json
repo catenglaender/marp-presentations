@@ -1,5 +1,6 @@
 {
     "markdown.marp.themes": [
       "./themes/cate-theme.css"
-    ]
+    ],
+    "markdown.marp.enableHtml": true
   }
