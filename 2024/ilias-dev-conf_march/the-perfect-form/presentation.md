@@ -108,8 +108,8 @@ https://userinyerface.com/
 
 * Frontend Developer at Concepts and Training GmbH
 * many ILIAS UI Component projects together with the University of Bern
-* UI research and projects for University of Bern
-* this presentation is based on a research paper written for University of Bern
+* past UI research and projects for the University of Bern
+* this presentation is also based on a research paper commissioned by the University of Bern
 
 ---
 
@@ -131,8 +131,7 @@ It's about if users can use the interface
 * quick
 * no errors
 * achieving their goal
-
-Good UI/UX is measurable!
+* = Good UI/UX is measurable!
 
 ---
 
@@ -214,10 +213,16 @@ Good UI/UX is measurable!
   * less relevant sections vs. mandatory sections
   * rarely relevant advanced sections
   * complex steps and nested sub-forms
+
+---
+
 * Goals
-  * better overview
-  * shorter completion time
-  * less frustration
+  * objectively 
+    * shorter completion time
+    * rules for structure & nesting
+  * subjectively 
+    * better overview
+    * less frustration
 
 ---
 
@@ -395,6 +400,8 @@ Groups / Sub-Forms
 
 ## Object-Oriented Branching
 
+using summary view sections
+
 ---
 
 ![](./img/Francis-Wu_dashboard-sub-forms.png)
@@ -439,9 +446,13 @@ less sub-tabs more child-items
 
 ---
 
+![](img/ERPNext_project-modal.png)
+
+---
+
 ### Advantages
 
-* great for a large number of additional inputs
+* great for a large number of initially hidden inputs
 * avoids page jumping and disorientation
 
 ---
@@ -502,7 +513,7 @@ What would be feasible without the UI framework exploding?
 * take a form and test if it would benefit from
   * hiding data in different ways (accordions, switchable groups, modals, sub-forms/-pages etc.)
   * introducing editable summary sections
-  * a wizard creation
+  * a wizard or quick entry modal creation
 * mockups and click-dummies can help judge if implementation is worth it
 
 ---
@@ -513,6 +524,10 @@ What would be feasible without the UI framework exploding?
 * 3 Interaction Modes: Condensed prompt, Creation, Adjusting 
 * Some ways to improve forms are already available
 
+---
+
 ## Questions?
 
-Ask now! And/or come to the UI Clinic on ilias.de
+Ask now!
+
+And/or come to the UI Clinic on docu.ilias.de
