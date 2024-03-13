@@ -526,8 +526,11 @@ What would be feasible without the UI framework exploding?
 
 ---
 
+Paper: [tinyurl.com/ilias24-form-pr](https://tinyurl.com/ilias24-form-pr)
+This presentation: [tinyurl.com/ilias-24-form-pres](https://tinyurl.com/ilias-24-form-pres)
+
 ## Questions?
 
 Ask now!
 
-And/or come to the UI Clinic on docu.ilias.de
+And/or come to the UI Clinic on [docu.ilias.de](https://docu.ilias.de/)
