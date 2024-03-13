@@ -494,9 +494,8 @@ less sub-tabs more child-items
 * Wizard
 * Quick-Entry
 * Administrative form
-* Editable Summary Sections
-
-What would be feasible without the UI framework exploding?
+* Editable Summary Section
+* ...what would be feasible without the UI framework exploding?
 
 ---
 
