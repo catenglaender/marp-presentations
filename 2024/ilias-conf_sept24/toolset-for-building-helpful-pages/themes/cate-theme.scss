@@ -65,7 +65,7 @@ h3 {
 
 h1 strong {
     background-color: $cat-color-1;
-    color: $cat-text-color-invert;
+    color: $cat-text-color-invert; 
     line-height: 3.2rem;
     padding: 0.2rem;
     box-decoration-break: clone;
@@ -118,19 +118,16 @@ section::after {
 
 
 @if $fade-inactive-bullets-to-gray {
-    section:not(.dont-fade-bullet-points) {
-        li:not([data-bespoke-marp-current-fragment="current"]) {
-            color: rgba($cat-text-color, 0.4);
-        }
-        li:not([data-bespoke-marp-current-fragment="current"]) > ul > li[data-bespoke-marp-current-fragment="current"] {
-            color: $cat-text-color;
-        }
-        .code-line li {
-            color: $cat-text-color !important;
-        }
-
+    li:not([data-bespoke-marp-current-fragment="current"]) {
+        color: rgba($cat-text-color, 0.4);
     }
-    section:not(.dont-fade-bullet-points).invert-bg {
+    li:not([data-bespoke-marp-current-fragment="current"]) > ul > li[data-bespoke-marp-current-fragment="current"] {
+        color: $cat-text-color;
+    }
+    .code-line li {
+        color: $cat-text-color !important;
+    }
+    section.invert-bg {
         li {
             color: $cat-text-color-invert;
         }
@@ -144,6 +141,7 @@ section::after {
             color: $cat-text-color-invert !important;
         }
     }
+    
 }
 
 // animation templates
