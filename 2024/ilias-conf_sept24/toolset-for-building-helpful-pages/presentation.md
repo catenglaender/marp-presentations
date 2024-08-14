@@ -20,17 +20,42 @@ footer: No ILIAS on a dead planet.
 
 <!-- _class: chapter-01 -->
 
+## **Let's start with a game...**
+---
+
+<!-- _footer: "" -->
+<!-- _header: "" -->
+
+![bg](img/cate_mixed-structure.png)
+
+---
+
+<!-- _footer: "" -->
+<!-- _header: "" -->
+
+![bg](img/cate_no-value-cards.png)
+
+---
+
+Strategies and best practices can prevent pages like this.
+
+Let's rewind...
+
+---
+
+<!-- _class: chapter-01 -->
+
 ## **A fresh start is wonderful**
 
 ---
 
 ![bg left:50% fit](img/meme_endless-possibilities.gif)
 
-I love a brand-new
+I ❤️ a brand-new
 
-* ❤️ computer
-* ❤️ paper planner
-* ❤️ renovated home
+* computer
+* paper planner
+* renovated home
 
 ---
 
@@ -44,7 +69,7 @@ A new chance, when everything
 
 ---
 
-## But how does it often end...
+## But how does it end...
 
 ![bg right:50% fit](img/meme_messy-room.jpg)
 
@@ -63,6 +88,12 @@ This could happen to an ILIAS installation
 * from clear to overwhelming
 * from pretty to ugly
 * from expertly managed to everyone doing their own thing
+
+---
+
+<!-- _class: chapter-01 -->
+
+## **How can we keep things from getting messy?**
 
 ---
 
@@ -122,6 +153,50 @@ With regards to managing users
 
 ---
 
+| Who?                | Target             | What topics?                  | Typical format?                                    | Update/release Cycle? | Motivation to update         | ILIAS familiarity       |
+|---------------------|--------------------|-------------------------------|----------------------------------------------------|-----------------------|------------------------------|-------------------------|
+| Team Leaders        | All Team Members   | Onboarding, Processes         | presentation, recording, how-tos, reading material | on rare changes       | self-interest                | contact for their team  |
+| Trainer             | Employees Learning | Broad to narrow topics        | presentation, recording, how-tos, reading material | regular repetition    | core business, self-interest | frequent user           |
+| Internal Experts    | Some Co-Workers    | Narrow topic                  | how to, recording                                  | occasionally          | self-interest                | none expected           |
+| IT                  | Most Employees     | Important security topic      | how to, reading material                           | rare updates          | regulations, self-interest   | high technical know-how |
+| Product Development | Many Employees     | Important core business topic | presentation, reading material                     | frequent updates      | core business                | may be familiar         |
+
+---
+
+Wer trägt bei?
+Onboarding vs. Gesetzestexte
+
+
+Was sind die Cyclen?
+
+Verlauf des Beitragens (Wachstum)
+* Regelmäßig aktualisieren Jedes Jahr Datenschutz
+* Bei Änderung - neue Tarife, neue Gesetze, Prozessoptimierung - regulatorisch, eigene Ziele, Geschäft
+* Zusätzliche Themen, neuer Bereich (z.B. Geschäftszweig)
+* Onboarding bleibt gleich (bis sich mit weitem Abstand etwas ändert)
+
+Wer macht einmal im Jahr was und wer jede Woche?
+Kleines Team vs. großes Team (wo Leute nicht voneinander wissen)
+
+Handout: Matrix
+
+Wie plant man mit Chaos
+
+Aufwand bei Inhalte und gestaltete Seiten
+
+Payback von Zeitinvestionen
+
+---
+
+Vor und Nachteile von verschiedenen Strukturierungen
+
+nach Jahr (Bilder machen keinen Sinn)
+nach Thema (Bilder können bei Orientierung helfen)
+nach Aufgabenbereich
+nach Zielgruppe
+
+---
+
 <!-- _class: chapter-01 -->
 
 ## **Structure**
@@ -133,8 +208,68 @@ With regards to managing users
 ## <i class="fa fa-edit"></i> Your turn
 
 * What structure of categories do we use where?
-  * by topics, by type (live webinar, SCORM course, in person, recordings), by target audience,...
+  * by topics, by type (live webinar, SCORM course, in person, recordings), by target audience, by action (learn, teach, change settings)...
 * Where do we break this structure and why?
-* Where do we have patterns that should stay consistent (e.g. in description or page content of a courses)
+* Where do we have patterns that should stay consistent (e.g. in description or page content of a courses always starting with "Speaker:")
 
 ---
+
+<!-- _class: chapter-01 -->
+
+## **Using the Page editor**
+
+---
+
+## Just generated elements
+
+---
+
+<!-- _footer: "" -->
+<!-- _header: "" -->
+
+![bg fit](img/cate_Structure-plain-list_2024-08-14_10-23.png)
+
+---
+
+<!-- _footer: "" -->
+<!-- _header: "" -->
+
+![bg fit](img/cate_too-many-tiles.png)
+
+---
+
+* List of items (e.g. categories) has no weighting
+* Even cards have no weighting
+
+---
+
+## Using the page editor to build overviews
+
+---
+
+<!-- _footer: "" -->
+<!-- _header: "" -->
+
+![bg fit](img/cate_featured-tiles.png)
+
+---
+
+<!-- _class: dont-fade-bullet-points -->
+
+## <i class="fa fa-edit"></i> Your turn
+
+* Which places in your ILIAS benefit from featured sections?
+
+---
+
+## Overviews can also promote actions
+
+* Suggestion: Say "hello" in the company Slack
+* Contact if you have questions
+
+---
+
+## Don't build your website
+
+## It's not word
+
