@@ -141,6 +141,7 @@ With regards to managing users
 
 ---
 
+* Making decisions based on use cases
 * Pitfalls of unclear structure
 * Using the Page Editor effectively together
   * Helpful (not just appealing) design
@@ -153,32 +154,66 @@ With regards to managing users
 
 ---
 
-| Who?                | Target             | What topics?                  | Typical format?                                    | Update/release Cycle? | Motivation to update         | ILIAS familiarity       |
-|---------------------|--------------------|-------------------------------|----------------------------------------------------|-----------------------|------------------------------|-------------------------|
-| Team Leaders        | All Team Members   | Onboarding, Processes         | presentation, recording, how-tos, reading material | on rare changes       | self-interest                | contact for their team  |
-| Trainer             | Employees Learning | Broad to narrow topics        | presentation, recording, how-tos, reading material | regular repetition    | core business, self-interest | frequent user           |
-| Internal Experts    | Some Co-Workers    | Narrow topic                  | how to, recording                                  | occasionally          | self-interest                | none expected           |
-| IT                  | Most Employees     | Important security topic      | how to, reading material                           | rare updates          | regulations, self-interest   | high technical know-how |
-| Product Development | Many Employees     | Important core business topic | presentation, reading material                     | frequent updates      | core business                | may be familiar         |
+<!-- _class: chapter-01 -->
+
+## **Making decisions based on use cases**
 
 ---
 
-Wer trägt bei?
-Onboarding vs. Gesetzestexte
+Who wants/needs to create ILIAS content?
+* groups (IT, product development, knowledge management)
+* individuals (leaders, trainers, experts)
+* What's their familiarity with ILIAS?
 
+---
 
-Was sind die Cyclen?
+What is the motive and target group size?
+* mandatory (regulations & laws, IDD time) vs. nice to have (internal processes, personal development)
+* general (widespread) vs. specific (just to whom it may concern) information
 
-Verlauf des Beitragens (Wachstum)
-* Regelmäßig aktualisieren Jedes Jahr Datenschutz
-* Bei Änderung - neue Tarife, neue Gesetze, Prozessoptimierung - regulatorisch, eigene Ziele, Geschäft
-* Zusätzliche Themen, neuer Bereich (z.B. Geschäftszweig)
-* Onboarding bleibt gleich (bis sich mit weitem Abstand etwas ändert)
+---
 
-Wer macht einmal im Jahr was und wer jede Woche?
-Kleines Team vs. großes Team (wo Leute nicht voneinander wissen)
+What update and teaching cycles do exist for which group?
+* on rare occasion
+* on frequent occasion
+* yearly
+* monthly
+* weekly
 
-Handout: Matrix
+---
+
+What teaching styles/methods are most likely being used for which content?
+* mandatory, yearly update, seen by many, avoids costly mistakes
+  * = videos, interactive content/quiz, SCORM course from external media company
+* expert gives impulse lecture, seen by few, knowledge might benefit some
+  * = webinar, recorded presentation
+
+---
+
+How much time and money can we spent on a page or piece of content - depends on
+* target group size
+* update and teaching frequency
+* measurable gain
+
+---
+
+## <i class="fa fa-edit"></i> Identify your content authors and their goals
+
+---
+
+<small>
+
+| Content Author   | Target Group Size | Measurable Gain            | Update Cycle          | Teaching Cycle | Typical Format/Style   | ILIAS skills of Author |
+|------------------|-------------------|----------------------------|-----------------------|----------------|------------------------|------------------------|
+| team leader      | all               | complying with regulations | once                  | <--            | webinar                | none                   |
+| IT               | team              | boost productivity         | on rare occasion      |                | on location training   | regular author         |
+| product team     | some              | team building              | on frequent occasions |                | premium quality course | admin                  |
+| external trainer | few               | filling positions          | regularly yearly      |                | interactive quiz       | ...                    |
+| ...              | leader            | employee happiness         | regularly monthly     |                | recorded presentation  |                        |
+
+</small>
+
+---
 
 Wie plant man mit Chaos
 
@@ -200,6 +235,39 @@ nach Zielgruppe
 <!-- _class: chapter-01 -->
 
 ## **Structure**
+
+---
+
+* a clear structure is a non-verbal instruction
+* can combat decent into chaos
+* sometimes a click path is quicker than a search
+
+---
+
+* Some possible structures
+  * by year
+  * by topics
+  * by type (live webinar, SCORM course, in person, recordings)
+  * by target audience
+  * by action (learn, teach, change settings)...
+
+---
+
+By year
+
+* e.g. 2021 / 2022 / 2023 > 01 January
+* at some point needs a sub-structure
+* doesn't indicate much about the content (was X a client/product in 2022)
+* very helpful where up-to-date content is vital (recent regulations, yearly line of products)
+
+---
+
+By topics
+
+* e.g. Product Development / Lead Generation / Product Line > Consumer Models, Industry Models
+* very human-friendly
+* too many or ambiguous topics can cause confusion
+* possible divide of relevant to many vs. relevant to a few = alphabetical sort might not be the best
 
 ---
 
