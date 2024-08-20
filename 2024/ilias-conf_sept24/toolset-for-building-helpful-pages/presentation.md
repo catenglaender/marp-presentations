@@ -167,8 +167,7 @@ Who wants/needs to create ILIAS content?
 
 ---
 
-What is the motive and target group size?
-* mandatory (regulations & laws, IDD time) vs. nice to have (internal processes, personal development)
+What is the target group size?
 * general (widespread) vs. specific (just to whom it may concern) information
 
 ---
@@ -182,6 +181,23 @@ What update and teaching cycles do exist for which group?
 
 ---
 
+Where is the motivation/pressure coming from?
+* mandatory (regulations & laws, IDD time) vs. nice to have (internal processes, personal development)
+
+---
+
+How much time and money can we spent on a page or piece of content - depends on
+* target group size
+* update and teaching frequency
+* measurable gain - payback of the investment
+  * complying with regulations
+  * boost productivity
+  * team building
+  * filling positions
+  * employee happiness
+
+---
+
 What teaching styles/methods are most likely being used for which content?
 * mandatory, yearly update, seen by many, avoids costly mistakes
   * = videos, interactive content/quiz, SCORM course from external media company
@@ -190,16 +206,14 @@ What teaching styles/methods are most likely being used for which content?
 
 ---
 
-How much time and money can we spent on a page or piece of content - depends on
-* target group size
-* update and teaching frequency
-* measurable gain
+## <i class="fa fa-edit"></i> Your turn
+
+Identify your content authors and their goals
 
 ---
 
-## <i class="fa fa-edit"></i> Identify your content authors and their goals
-
----
+<!-- _footer: "" -->
+<!-- _header: "" -->
 
 <small>
 
@@ -244,12 +258,12 @@ nach Zielgruppe
 
 ---
 
-* Some possible structures
-  * by year
-  * by topics
-  * by type (live webinar, SCORM course, in person, recordings)
-  * by target audience
-  * by action (learn, teach, change settings)...
+Some possible structures
+* by year
+* by topics
+* by type (live webinar, SCORM course, in person, recordings)
+* by target group
+* by action (learn, teach, change settings)...
 
 ---
 
@@ -271,24 +285,50 @@ By topics
 
 ---
 
+By type
+
+* webinars / live on-location / online courses / interactive training / handbooks
+* doesn't reveal anything about the topics inside
+* okay as secondary structure as type can be indicator of time investment
+
+---
+
+By target audience
+
+* sales team / product developer / floor worker / manager
+* very friendly for human navigation ("I am X")
+* smallest segment might still need further segmentation
+* some content overlaps (product info, fire safety)
+* bridges well to topics
+
+---
+
+By action
+
+* stay up to date / learn / teach / organize / administrate
+* actions can be a good first level menu
+* cover target groups that overlap broadly (all team leaders need to teach)
+
+---
+
 <!-- _class: dont-fade-bullet-points -->
 
 ## <i class="fa fa-edit"></i> Your turn
 
-* What structure of categories do we use where?
-  * by topics, by type (live webinar, SCORM course, in person, recordings), by target audience, by action (learn, teach, change settings)...
-* Where do we break this structure and why?
-* Where do we have patterns that should stay consistent (e.g. in description or page content of a courses always starting with "Speaker:")
+* What structure of categories do we use where and to which point?
+  * by topics, by type, by target audience, by action...
+* think about your own ILIAS instances or take a fictional example
+  * car dealer & repair workshop, restaurant chain, death star, beehive
 
 ---
 
 <!-- _class: chapter-01 -->
 
-## **Using the Page editor**
+## **Repository Pages without the Page Editor**
 
 ---
 
-## Just generated elements
+Category "Onboarding"
 
 ---
 
@@ -311,7 +351,9 @@ By topics
 
 ---
 
-## Using the page editor to build overviews
+<!-- _class: chapter-01 -->
+
+## **Using the page editor to build overviews**
 
 ---
 
@@ -322,22 +364,120 @@ By topics
 
 ---
 
-<!-- _class: dont-fade-bullet-points -->
-
-## <i class="fa fa-edit"></i> Your turn
-
-* Which places in your ILIAS benefit from featured sections?
+## Multiple sections
 
 ---
 
-## Overviews can also promote actions
+Structures per section
+* Announcement by date
+* Sales Team / Factory Staff / Management
+* My Progress & Certificates / My Bookmarks / My Settings
 
-* Suggestion: Say "hello" in the company Slack
+---
+
+Sections can be related to an action
+* Say "hello" in the company Slack
+* Check total learning progress
 * Contact if you have questions
 
 ---
 
-## Don't build your website
+<!-- _class: dont-fade-bullet-points -->
 
-## It's not word
+## <i class="fa fa-edit"></i> Your turn
 
+* Which places in your (fictional) ILIAS benefit from featured/multiple sections?
+
+---
+
+## Is it a good idea to rival course lists?
+
+---
+
+<!-- _class: chapter-01 -->
+
+## **How to build pages**
+
+---
+
+## Sections
+
+* ILIAS comes with a default set of content styles
+* you can add your own
+
+---
+
+(show content styles in ILIAS 9)
+
+---
+
+### Some default blocks
+
+---
+
+<!-- _header: "" -->
+<!-- _footer: "" -->
+
+![bg fit](img/ilias_default-sections.png)
+
+---
+
+### Purpose first
+
+* Encodes instructions into the section's name
+* Using Citation for an Alert box is objectively wrong
+* might lead to visual duplicates: course card, news card
+
+---
+
+### Appearance first
+
+---
+
+![bg fit](img/cate_section-design-Elements.png)
+
+---
+
+<!-- _header: "" -->
+<!-- _footer: "" -->
+
+![bg fit](img/cate_card-construct-edit-mode.png)
+![bg fit](img/cate_card-construct.png)
+
+---
+
+Pro
+* with nested constructs almost anything becomes possible
+* with just a few different sections you can build very different pages/elements
+
+---
+
+(show Card page in cate)
+
+---
+
+Con
+* high CSS skill level needed
+* quickly become too complex to build by hand
+
+---
+
+---
+
+## Beware
+
+---
+
+* don't build your website
+  * websites usually don't have a many content creators
+  * the complexity of most modern website design's goes beyond what you can maintain and teach
+    * inner-spacing-large or inner-spacing-small?
+  * keep it simple
+
+---
+
+* the page editor isn't Microsoft Word
+  * should people be able to randomly style text green?
+  * limitations can force people to make good design decisions
+
+---
