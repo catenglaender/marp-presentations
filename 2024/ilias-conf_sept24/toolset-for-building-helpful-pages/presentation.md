@@ -267,6 +267,7 @@ By topics
 * e.g. Product Development / Lead Generation / Product Line > Consumer Models, Industry Models
 * very human-friendly
 * too many or ambiguous topics can cause confusion
+* what is sub-topic parent-topic? e.g. electronics > handbooks
 * some topics might be relevant to many, others relevant to a few
   * alphabetical sort might not be the best
 
@@ -514,6 +515,19 @@ see [card page](https://prod1.prod.cate-tms.de/ilias.php?ref_id=1068&cmd=return&
 whole template page
 new image size indicators
 see [start page](https://prod1.prod.cate-tms.de/ilias.php?ref_id=2723&cmd=render&cmdClass=ilrepositorygui&cmdNode=16u&baseClass=ilrepositorygui)
+
+---
+
+<!-- _class: dont-fade-bullet-points -->
+
+## <i class="fa fa-edit"></i> Your turn
+
+* which one of your section could use what kind of design element
+  * card
+  * sidebar
+  * icon & text
+  * icon & list
+  * ...
 
 ---
 
