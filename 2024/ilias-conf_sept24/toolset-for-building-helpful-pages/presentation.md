@@ -2,7 +2,7 @@
 
 theme: cate-theme
 paginate: false
-header: ILIAS DevConf September 2023 | cate-tms.de
+header: ILIAS Conference 2024 | cate-tms.de
 footer: No ILIAS on a dead planet.
 
 ---
@@ -403,8 +403,12 @@ e.g. for onboarding page
 Design = Structure
 * create hierarchy
   * not by what looks good, but by information priority
-* build familiar patterns, people can recognize
+* build familiar patterns, people can recognize (see next page)
 * some branding and visual coherence, not everyone doing their own thing
+
+---
+
+![unibe_step-by-step.png](../../../../../Pictures/unibe_step-by-step.png)
 
 ---
 
