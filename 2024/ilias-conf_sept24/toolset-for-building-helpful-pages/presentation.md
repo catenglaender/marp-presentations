@@ -522,7 +522,7 @@ see [start page](https://prod1.prod.cate-tms.de/ilias.php?ref_id=2723&cmd=render
 
 ## <i class="fa fa-edit"></i> Your turn
 
-* which one of your section could use what kind of design element
+* which one of your section could use what kind of design element?
   * card
   * sidebar
   * icon & text
