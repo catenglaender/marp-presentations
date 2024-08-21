@@ -168,7 +168,8 @@ Who wants/needs to create ILIAS content?
 ---
 
 What is the target group size?
-* general (widespread) vs. specific (just to whom it may concern) information
+* general (widespread)
+* very specific (to whom it may concern)
 
 ---
 
@@ -182,7 +183,9 @@ What update and teaching cycles do exist for which group?
 ---
 
 Where is the motivation/pressure coming from?
-* mandatory (regulations & laws, IDD time) vs. nice to have (internal processes, personal development)
+* mandatory (regulations & laws, IDD time)
+* core business (processes, operations)
+* nice to have (personal development)
 
 ---
 
@@ -229,23 +232,6 @@ Identify your content authors and their goals
 
 ---
 
-Wie plant man mit Chaos
-
-Aufwand bei Inhalte und gestaltete Seiten
-
-Payback von Zeitinvestionen
-
----
-
-Vor und Nachteile von verschiedenen Strukturierungen
-
-nach Jahr (Bilder machen keinen Sinn)
-nach Thema (Bilder können bei Orientierung helfen)
-nach Aufgabenbereich
-nach Zielgruppe
-
----
-
 <!-- _class: chapter-01 -->
 
 ## **Structure**
@@ -281,7 +267,8 @@ By topics
 * e.g. Product Development / Lead Generation / Product Line > Consumer Models, Industry Models
 * very human-friendly
 * too many or ambiguous topics can cause confusion
-* possible divide of relevant to many vs. relevant to a few = alphabetical sort might not be the best
+* some topics might be relevant to many, others relevant to a few
+  * alphabetical sort might not be the best
 
 ---
 
@@ -289,7 +276,8 @@ By type
 
 * webinars / live on-location / online courses / interactive training / handbooks
 * doesn't reveal anything about the topics inside
-* okay as secondary structure as type can be indicator of time investment
+* okay as secondary structure
+  * type can be indicator of time/attention investment
 
 ---
 
@@ -364,21 +352,58 @@ Category "Onboarding"
 
 ---
 
+## Page Editor Sections/Blocks vs Repository Items
+
+---
+
+Repository Items
+
+* Lists of repository objects are always up to date
+* Limited control over design
+* only two visual weights (card and item)
+
+---
+
+Custom Page Editor Sections/Blocks
+
+* Many different designs and visual weights possible
+* some temporary and helper objects can be better omitted/hidden
+* copying and updating fake card items can be time-consuming and error-prone
+
+---
+
 ## Multiple sections
 
 ---
 
-Structures per section
+Sections build around questions
+
+see [University of Bern Support page](https://ilias.unibe.ch/ilias.php?baseClass=ilwikihandlergui&cmdNode=18e:sm&cmdClass=ilobjwikigui&cmd=viewPage&ref_id=2572718&page=Landing_page)
+
+---
+
+Structures can change per section
 * Announcement by date
 * Sales Team / Factory Staff / Management
 * My Progress & Certificates / My Bookmarks / My Settings
 
 ---
 
-Sections can be related to an action
+Sections can have a call to action
+e.g. for onboarding page
+* book in person training
+* mandatory trainings
+* optional trainings
 * Say "hello" in the company Slack
-* Check total learning progress
 * Contact if you have questions
+
+---
+
+Design = Structure
+* create hierarchy
+  * not by what looks good, but by information priority
+* build familiar patterns, people can recognize
+* some branding and visual coherence, not everyone doing their own thing
 
 ---
 
@@ -387,16 +412,13 @@ Sections can be related to an action
 ## <i class="fa fa-edit"></i> Your turn
 
 * Which places in your (fictional) ILIAS benefit from featured/multiple sections?
-
----
-
-## Is it a good idea to rival course lists?
+* What purpose does each section have?
 
 ---
 
 <!-- _class: chapter-01 -->
 
-## **How to build pages**
+## **Building blocks of pages**
 
 ---
 
@@ -404,6 +426,7 @@ Sections can be related to an action
 
 * ILIAS comes with a default set of content styles
 * you can add your own
+* (text blocks and character styles)
 
 ---
 
@@ -411,7 +434,7 @@ Sections can be related to an action
 
 ---
 
-### Some default blocks
+### Default blocks have mixed semantics
 
 ---
 
@@ -422,19 +445,36 @@ Sections can be related to an action
 
 ---
 
-### Purpose first
+### Naming Convention: Purpose
 
+* e.g. Example, Citation, Important
 * Encodes instructions into the section's name
-* Using Citation for an Alert box is objectively wrong
-* might lead to visual duplicates: course card, news card
-
----
-
-### Appearance first
+* Using Citation for an important alert is objectively wrong
+* might lead to visual duplicates: course card = news card
 
 ---
 
 ![bg fit](img/cate_section-design-Elements.png)
+
+---
+
+### Naming Convention: Appearance
+
+* e.g. bright-card, dark-card
+* needs communication and template pages that explain usage
+* might invite more experimentation and combinations than you might want to support (dark-card in bright-card in center-align-text)
+* recommendation: needs dedicated team and experts to maintain and teach
+
+---
+
+## Appearance with purpose hints
+
+* University of Bern
+* loud vs. quiet
+
+---
+
+## Nested Appearance Sections
 
 ---
 
@@ -452,32 +492,121 @@ Pro
 
 ---
 
-(show Card page in cate)
+(show [card page](https://prod1.prod.cate-tms.de/ilias.php?ref_id=1068&cmd=return&cmdClass=ilrepositorygui&cmdNode=16u&baseClass=ilRepositoryGUI&redirectSource=ilcontainerpagegui&cmdMode=) in cate)
 
 ---
 
 Con
 * high CSS skill level needed
-* quickly become too complex to build by hand
+* quickly become too complex to build by hand, needs templates to copy from
+* rivals Section > Block > Character / (Outer) Section > (Inner) Section > (Helper Style) Section 
 
 ---
+
+## Templates
+
+many single elements
+best practices at the top
+see [card page](https://prod1.prod.cate-tms.de/ilias.php?ref_id=1068&cmd=return&cmdClass=ilrepositorygui&cmdNode=16u&baseClass=ilRepositoryGUI&redirectSource=ilcontainerpagegui&cmdMode=)
+
+---
+
+whole template page
+new image size indicators
+see [start page](https://prod1.prod.cate-tms.de/ilias.php?ref_id=2723&cmd=render&cmdClass=ilrepositorygui&cmdNode=16u&baseClass=ilrepositorygui)
+
+---
+
+## Using ILIAS to teach and interact with your creators
+
+* handbook pages
+* courses (maybe with screen captures videos)
+* webinar and live demos, workshops training
+* feedback
 
 ---
 
 ## Beware
 
----
-
-* don't build your website
-  * websites usually don't have a many content creators
-  * the complexity of most modern website design's goes beyond what you can maintain and teach
-    * inner-spacing-large or inner-spacing-small?
-  * keep it simple
+Hard lessons we had to learn
 
 ---
 
-* the page editor isn't Microsoft Word
-  * should people be able to randomly style text green?
-  * limitations can force people to make good design decisions
+wishing for too many styles
+* too many styles can become overwhelming
+* a large style library is difficult to maintain
+* too many design elements = loss of visual coherence
 
 ---
+
+don't build a website
+* websites usually don't have that many content creators with vastly different skill levels
+* the complexity of most modern website design's goes beyond what you can maintain and teach
+  * inner-spacing-large or inner-spacing-small?
+* keep it simple
+
+---
+
+the page editor isn't Microsoft Word
+* should people be able to randomly style text green?
+* limitations
+  * can force people to make good design decisions
+  * create visual coherence
+
+---
+
+<!-- _class: chapter-01 -->
+
+## **Advanced Techniques**
+
+---
+
+### System style can style content styles
+
+(demo targeting a class)
+
+---
+
+Pro
+* very complex nested styling possible
+* easier to roll out and adapt for many different skins
+
+Con
+* needs good CSS and page editor knowledge
+* conflicts with many custom style functions in ILIAS (e.g. per page custom style)
+* not an officially supported feature
+
+---
+
+### Multi-style
+
+(demo in cate, making card with drop shadow)
+
+---
+
+### Maybe in the future: Page Editor Plugin
+
+One block = one complex element, no nesting
+
+---
+
+<!-- _class: chapter-01 -->
+
+## **Conclusion**
+
+---
+
+* design is structure, not decoration
+* building your own pages provides guidance
+  * for users: visual weighting / segmentation
+  * for creators: toolkit, templates for quick & consistent pages
+* clear use cases provide focus
+* templates can be their own documentation
+
+---
+
+Curious what else cate can do?
+
+Creating mandatory training for business clients:
+https://cate-tms.de/cate-erklaert.html
+
