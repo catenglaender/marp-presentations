@@ -21,6 +21,13 @@ footer: No ILIAS on a dead planet.
 <!-- _class: chapter-01 -->
 
 ## **Let's start with a game...**
+
+---
+
+how do we want a new user to start
+
+* start page instead of dashboard
+
 ---
 
 <!-- _footer: "" -->
@@ -209,9 +216,13 @@ What teaching styles/methods are most likely being used for which content?
 
 ---
 
+<!-- _class: dont-fade-bullet-points -->
+
 ## <i class="fa fa-edit"></i> Your turn
 
-Identify your content authors and their goals
+* identify your content authors and their goals
+* think about your own ILIAS instances or take a fictional example
+  * car dealer & repair workshop, restaurant chain, death star, beehive
 
 ---
 
@@ -306,8 +317,7 @@ By action
 
 * What structure of categories do we use where and to which point?
   * by topics, by type, by target audience, by action...
-* think about your own ILIAS instances or take a fictional example
-  * car dealer & repair workshop, restaurant chain, death star, beehive
+
 
 ---
 
@@ -529,9 +539,11 @@ see [start page](https://prod1.prod.cate-tms.de/ilias.php?ref_id=2723&cmd=render
 * which one of your section could use what kind of design element?
   * card
   * sidebar
+  * news section
   * icon & text
   * icon & list
   * ...
+* rough mockups can help to visualize ideas
 
 ---
 
