@@ -121,6 +121,18 @@ enable_system_styles_management = "1"
 
 ---
 
+### Adjust .gitignore
+
+> Directories
+> 
+> /data
+> ~~/Customizing/global~~
+> /Customizing/clients
+> virtual-data
+> /libs/composer/vendor
+
+---
+
 ### Create custom system style folder
 
 Create folder 'Customizing/global/skin/myskin'
@@ -132,8 +144,13 @@ Create folder 'Customizing/global/skin/myskin'
 in 'Customizing/global/skin/myskin/'
 
 ```xml
-
+<?xml version = "1.0" encoding = "UTF-8"?>
+<template xmlns = "http://www.w3.org" version = "1" name = "MySkin">
+  <style name = "MyStyle" id = "mystyle" image_directory = "images"/>
+</template>
 ```
+
+id is the CSS file name
 
 ---
 
@@ -193,6 +210,96 @@ in 'Customizing/global/skin/myskin/'
 ```
 
 ---
+
+### Adding minor css tweaks
+
+---
+
+<!-- _class: chapter-01 -->
+
+## **Advanced Skins (System Styles)**
+
+---
+
+### Fork delos
+
+https://github.com/ILIAS-eLearning/delos/tree/release_9
+
+* is automatically updated whenever the full ILIAS repo changes
+* makes it easy to pull and diff changes from the unmodified delos
+* opens up many possible pipelines and workflows:
+  * good old copy paste
+  * git clone
+  * git subtree
+  * git submodule
+
+---
+
+### Set up a subtree
+
+At ILIAS root
+
+```
+                                sub-folder                                    repository                          branch  no history
+git subtree add --prefix Customizing/global/skin/myskin/mystyle git@github.com:catenglaender/exampleSkinILIAS.git release_9 --squash
+```
+
+---
+
+### Important Notes
+
+* .gitignore of the parent is still active
+* template.xml is needed
+* id in template.xml is the expected CSS file name
+
+---
+
+### Overrides
+
+* non-scss folders and files in Customizing/global/skin can be deleted
+* ILIAS will then use the files of the same name from templates/default instead
+* this allows you to override e.g. images and html templates selectively
+
+---
+
+### Commits
+
+If you use git subtree:
+don't mix subtree files and parent repo files in the same commit
+
+---
+
+### Push to the subtree
+
+```
+                                sub-folder                                    repository                           branch
+git subtree push --prefix Customizing/global/skin/myskin/mystyle git@github.com:catenglaender/exampleSkinILIAS.git release_9
+```
+
+---
+
+### Fonts
+
+_settings_typography
+_normalize_typography
+
+---
+
+### Panels
+
+modifying modern UI component
+
+---
+
+### Toolbar
+
+override through a separate file
+
+---
+
+### Questions?
+
+Good luck and have fun creating your skins!
 
 ---
 
