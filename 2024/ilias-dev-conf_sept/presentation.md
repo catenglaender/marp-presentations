@@ -11,25 +11,48 @@ footer: No ILIAS on a dead planet.
 
 <style>@import 'https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css';</style>
 
-<div class="custom">A custom div</div>
-
-# ** Custom skins (system styles) in ILIAS 9+**
+# **Custom skins (system styles) in ILIAS 9+**
 
 ---
 
 This is ILIAS
 
+using delos
+
 ---
 
-This is cate, an extended ILIAS with a custom ILIAS
+<!-- _footer: "" -->
+<!-- _header: "" -->
+
+![bg 90% fit](img/ilias-delos.png)
+
+---
+
+This is cate, an extended ILIAS
+
+and it can look very different...
+
+---
+
+<!-- _footer: "" -->
+<!-- _header: "" -->
+
+![bg 90% fit](img/cate-white.png)
+
+---
+
+<!-- _footer: "" -->
+<!-- _header: "" -->
+
+![bg 90% fit](img/cate-rainbow-skin.png)
 
 ---
 
 You can make ILIAS look greatly different
-
----
-
-Custom Skins (system styles)
+* with custom skins (system styles)
+* to better fit
+  * your brand
+  * your established UX patterns
 
 ---
 
@@ -193,7 +216,7 @@ id is the CSS file name
 
 * standard page background
 * header color
-* background color
+* mainbar color
 
 ---
 
@@ -211,7 +234,21 @@ id is the CSS file name
 
 ---
 
+### Overriding images
+
+---
+
+change logo
+
+---
+
+change dashboard icon
+
+---
+
 ### Adding minor css tweaks
+
+logo position
 
 ---
 
@@ -224,6 +261,8 @@ id is the CSS file name
 ### Fork delos
 
 https://github.com/ILIAS-eLearning/delos/tree/release_9
+
+---
 
 * is automatically updated whenever the full ILIAS repo changes
 * makes it easy to pull and diff changes from the unmodified delos
@@ -288,6 +327,8 @@ _normalize_typography
 ### Panels
 
 modifying modern UI component
+
+removing padding
 
 ---
 

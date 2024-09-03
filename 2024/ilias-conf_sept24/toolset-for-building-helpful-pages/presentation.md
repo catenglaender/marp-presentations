@@ -410,6 +410,12 @@ e.g. for onboarding page
 
 ---
 
+Dynamic pages
+* Permission Handling on Section > Permission Object
+* takes the permission to display section from a repository object
+
+---
+
 Design = Structure
 * create hierarchy
   * not by what looks good, but by information priority
