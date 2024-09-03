@@ -97,7 +97,7 @@ Big changes are here in ILIAS 9
 * needed/recommended tools
 * simple: modifying variables at the entry point
   * great for changing a few colors, spacings and font settings
-* advanced: forking the delos
+* advanced: forking delos
   * change anything (but keep the option to compare with and pull from delos)
 
 ---
