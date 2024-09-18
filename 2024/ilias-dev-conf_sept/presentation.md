@@ -159,12 +159,17 @@ enable_system_styles_management = "1"
 ### Create custom system style folder
 
 Create folder 'Customizing/global/skin/myskin'
+```bash
+mkdir -p Customizing/global/skin/myskin
+```
 
 ---
 
 ### Create template.xml
 
-in 'Customizing/global/skin/myskin/'
+```bash
+touch Customizing/global/skin/myskin/template.xml
+```
 
 ```xml
 <?xml version = "1.0" encoding = "UTF-8"?>
@@ -173,11 +178,16 @@ in 'Customizing/global/skin/myskin/'
 </template>
 ```
 
-id is the CSS file name
-
 ---
 
 ### Create mystyle/mystyle.scss
+
+```bash
+mkdir Customizing/global/skin/myskin/mystyle
+touch Customizing/global/skin/myskin/mystyle/mystyle.scss
+```
+
+id is the folder and CSS file name
 
 ---
 
@@ -195,6 +205,15 @@ id is the CSS file name
 @use "../../../../../templates/default/delos" as delos with (
       $il-main-color: #a52d2d,
 );
+```
+
+---
+
+### Compile
+
+```bash
+cd Customizing/global/skin/myskin/mystyle/
+dart-sass mystyle.scss mystyle.css
 ```
 
 ---
@@ -234,21 +253,25 @@ id is the CSS file name
 
 ---
 
-### Overriding images
+### Overriding logo
 
 ---
 
 change logo
 
----
-
-change dashboard icon
+skin/myskin/mystyle/images/logo/...
 
 ---
 
 ### Adding minor css tweaks
 
 logo position
+
+---
+
+### Overriding icons
+
+change dashboard icon
 
 ---
 
@@ -344,8 +367,9 @@ Good luck and have fun creating your skins!
 
 ---
 
-Curious what else cate can do?
+Curious what else cate can do besides looking good?
+https://cate-tms.de/en/
 
-Creating mandatory training for business clients:
+Pflichtunterweisungen fürs Studienprogramm:
 https://cate-tms.de/cate-erklaert.html
 

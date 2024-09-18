@@ -99,7 +99,7 @@
 <li data-marpit-fragment="3">great for changing a few colors, spacings and font settings</li>
 </ul>
 </li>
-<li data-marpit-fragment="4">advanced: forking the delos
+<li data-marpit-fragment="4">advanced: forking delos
 <ul>
 <li data-marpit-fragment="5">change anything (but keep the option to compare with and pull from delos)</li>
 </ul>
@@ -171,23 +171,29 @@ virtual-data<br />
 <header>ILIAS Conference 2024 | cate-tms.de</header>
 <h3 id="create-custom-system-style-folder">Create custom system style folder</h3>
 <p>Create folder 'Customizing/global/skin/myskin'</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-built_in">mkdir</span> -p Customizing/global/skin/myskin
+</code></pre>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
 <header>ILIAS Conference 2024 | cate-tms.de</header>
 <h3 id="create-templatexml">Create template.xml</h3>
-<p>in 'Customizing/global/skin/myskin/'</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-built_in">touch</span> Customizing/global/skin/myskin/template.xml
+</code></pre>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-xml"><span class="hljs-meta">&lt;?xml version = <span class="hljs-string">&quot;1.0&quot;</span> encoding = <span class="hljs-string">&quot;UTF-8&quot;</span>?&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">xmlns</span> = <span class="hljs-string">&quot;http://www.w3.org&quot;</span> <span class="hljs-attr">version</span> = <span class="hljs-string">&quot;1&quot;</span> <span class="hljs-attr">name</span> = <span class="hljs-string">&quot;MySkin&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">name</span> = <span class="hljs-string">&quot;MyStyle&quot;</span> <span class="hljs-attr">id</span> = <span class="hljs-string">&quot;mystyle&quot;</span> <span class="hljs-attr">image_directory</span> = <span class="hljs-string">&quot;images&quot;</span>/&gt;</span><span class="language-xml">
 <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
 </span></code></pre>
-<p>id is the CSS file name</p>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
 <header>ILIAS Conference 2024 | cate-tms.de</header>
 <h3 id="create-mystylemystylescss">Create mystyle/mystyle.scss</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-built_in">mkdir</span> Customizing/global/skin/myskin/mystyle
+<span class="hljs-built_in">touch</span> Customizing/global/skin/myskin/mystyle/mystyle.scss
+</code></pre>
+<p>id is the folder and CSS file name</p>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
@@ -208,6 +214,14 @@ virtual-data<br />
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
 <header>ILIAS Conference 2024 | cate-tms.de</header>
+<h3 id="compile">Compile</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-built_in">cd</span> Customizing/global/skin/myskin/mystyle/
+dart-sass mystyle.scss mystyle.css
+</code></pre>
+<footer>No ILIAS on a dead planet.</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
+<header>ILIAS Conference 2024 | cate-tms.de</header>
 <h3 id="fix-icons-and-fonts">Fix icons and fonts</h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">&quot;../../../../../templates/default/delos&quot;</span> as delos with (
       <span class="hljs-variable">$il-web-font-path</span>: <span class="hljs-string">&quot;../../../../../templates/default/fonts/&quot;</span>,
@@ -218,7 +232,7 @@ virtual-data<br />
 </code></pre>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-marpit-fragments="3" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-marpit-fragments="3" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
 <header>ILIAS Conference 2024 | cate-tms.de</header>
 <h3 id="exploring-the-settings-layer-for-more-variables-to-change">Exploring the settings layer for more variables to change</h3>
 <ul>
@@ -228,7 +242,7 @@ virtual-data<br />
 </ul>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
 <header>ILIAS Conference 2024 | cate-tms.de</header>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">&quot;../../../../../templates/default/delos&quot;</span> as delos with (
       <span class="hljs-variable">$il-web-font-path</span>: <span class="hljs-string">&quot;../../../../../templates/default/fonts/&quot;</span>,
@@ -242,19 +256,15 @@ virtual-data<br />
 </code></pre>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
-<header>ILIAS Conference 2024 | cate-tms.de</header>
-<h3 id="overriding-images">Overriding images</h3>
-<footer>No ILIAS on a dead planet.</footer>
-</section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="30" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
 <header>ILIAS Conference 2024 | cate-tms.de</header>
-<p>change logo</p>
+<h3 id="overriding-logo">Overriding logo</h3>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="31" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
 <header>ILIAS Conference 2024 | cate-tms.de</header>
-<p>change dashboard icon</p>
+<p>change logo</p>
+<p>skin/myskin/mystyle/images/logo/...</p>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="32" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
@@ -263,19 +273,25 @@ virtual-data<br />
 <p>logo position</p>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="33" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-class="chapter-01" data-theme="cate-theme" lang="en-US" class="chapter-01" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--class:chapter-01;--theme:cate-theme;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="33" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
+<header>ILIAS Conference 2024 | cate-tms.de</header>
+<h3 id="overriding-icons">Overriding icons</h3>
+<p>change dashboard icon</p>
+<footer>No ILIAS on a dead planet.</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="34" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-class="chapter-01" data-theme="cate-theme" lang="en-US" class="chapter-01" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--class:chapter-01;--theme:cate-theme;">
 <header>ILIAS Conference 2024 | cate-tms.de</header>
 
 <h2 id="advanced-skins-system-styles"><strong>Advanced Skins (System Styles)</strong></h2>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="34" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="35" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
 <header>ILIAS Conference 2024 | cate-tms.de</header>
 <h3 id="fork-delos">Fork delos</h3>
 <p><a href="https://github.com/ILIAS-eLearning/delos/tree/release_9">https://github.com/ILIAS-eLearning/delos/tree/release_9</a></p>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="35" data-marpit-fragments="7" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36" data-marpit-fragments="7" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
 <header>ILIAS Conference 2024 | cate-tms.de</header>
 <ul>
 <li data-marpit-fragment="1">is automatically updated whenever the full ILIAS repo changes</li>
@@ -291,7 +307,7 @@ virtual-data<br />
 </ul>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="37" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
 <header>ILIAS Conference 2024 | cate-tms.de</header>
 <h3 id="set-up-a-subtree">Set up a subtree</h3>
 <p>At ILIAS root</p>
@@ -300,7 +316,7 @@ git subtree add --prefix Customizing/global/skin/myskin/mystyle git@github.com:c
 </code></pre>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="37" data-marpit-fragments="3" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="38" data-marpit-fragments="3" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
 <header>ILIAS Conference 2024 | cate-tms.de</header>
 <h3 id="important-notes">Important Notes</h3>
 <ul>
@@ -310,7 +326,7 @@ git subtree add --prefix Customizing/global/skin/myskin/mystyle git@github.com:c
 </ul>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="38" data-marpit-fragments="3" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="39" data-marpit-fragments="3" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
 <header>ILIAS Conference 2024 | cate-tms.de</header>
 <h3 id="overrides">Overrides</h3>
 <ul>
@@ -320,14 +336,14 @@ git subtree add --prefix Customizing/global/skin/myskin/mystyle git@github.com:c
 </ul>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="39" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="40" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
 <header>ILIAS Conference 2024 | cate-tms.de</header>
 <h3 id="commits">Commits</h3>
 <p>If you use git subtree:<br />
 don't mix subtree files and parent repo files in the same commit</p>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="40" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="41" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
 <header>ILIAS Conference 2024 | cate-tms.de</header>
 <h3 id="push-to-the-subtree">Push to the subtree</h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code>                                sub-folder                                    repository                           branch
@@ -335,36 +351,37 @@ git subtree push --prefix Customizing/global/skin/myskin/mystyle git@github.com:
 </code></pre>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="41" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="42" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
 <header>ILIAS Conference 2024 | cate-tms.de</header>
 <h3 id="fonts">Fonts</h3>
 <p>_settings_typography<br />
 _normalize_typography</p>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="42" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="43" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
 <header>ILIAS Conference 2024 | cate-tms.de</header>
 <h3 id="panels">Panels</h3>
 <p>modifying modern UI component</p>
 <p>removing padding</p>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="43" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="44" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
 <header>ILIAS Conference 2024 | cate-tms.de</header>
 <h3 id="toolbar">Toolbar</h3>
 <p>override through a separate file</p>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="44" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="45" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
 <header>ILIAS Conference 2024 | cate-tms.de</header>
 <h3 id="questions">Questions?</h3>
 <p>Good luck and have fun creating your skins!</p>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="45" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="46" data-header="ILIAS Conference 2024 | cate-tms.de" data-footer="No ILIAS on a dead planet." data-theme="cate-theme" lang="en-US" style="--header:ILIAS Conference 2024 | cate-tms.de;--footer:No ILIAS on a dead planet.;--theme:cate-theme;">
 <header>ILIAS Conference 2024 | cate-tms.de</header>
-<p>Curious what else cate can do?</p>
-<p>Creating mandatory training for business clients:<br />
+<p>Curious what else cate can do besides looking good?<br />
+<a href="https://cate-tms.de/en/">https://cate-tms.de/en/</a></p>
+<p>Pflichtunterweisungen fürs Studienprogramm:<br />
 <a href="https://cate-tms.de/cate-erklaert.html">https://cate-tms.de/cate-erklaert.html</a></p>
 <footer>No ILIAS on a dead planet.</footer>
 </section>
