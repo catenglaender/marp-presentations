@@ -71,6 +71,7 @@ Modal
 
 ## Was bringt uns das?
 
+* Legacy UI und Code ersetzen, dringende Renovierungsarbeiten
 * Spürbare Verbesserung für bestehende Nutzungsszenarien
 * Nutzungsszenario "Manuelle Bewertung" wird interessanter für weitere Institutionen
 * Teilnehmende spüren eine schnellere Benotung (und entspanntere Prüfende)
@@ -79,10 +80,10 @@ Modal
 
 ## Beteiligung
 
-* Ferdinand Engländer, CaT Concepts & Training
-  * Richard Klees, Nils Haagen
 * Marko Glaubitz, Universität Freiburg
 * Denis Strassner, Universität Hohenheim
+* Ferdinand Engländer, CaT Concepts & Training
+  * Richard Klees, Nils Haagen
 
 ---
 
@@ -136,6 +137,7 @@ Sequence Navigator
 
 * Entwicklung läuft bereits
 * notwendig für andere Bereiche (Learning Sequence, Test Player)
+* Yvonne Seiler, Oliver Samoila, Stephan Kergomard u.a.
 
 ---
 
