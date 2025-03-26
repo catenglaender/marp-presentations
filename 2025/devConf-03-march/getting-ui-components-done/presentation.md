@@ -74,7 +74,7 @@ Screens (a bit) improved & (more) future-proof
 
 ## Ferdinand Engländer
 
-Frontent Developer @ Concepts and Training
+Frontent Developer @ Concepts and Training GmbH
 ILIAS Authority to Sign off on Concepts / Code Changes for CSS and templates
 
 ---
@@ -143,7 +143,7 @@ Alexandra Toedt
 
 Yvonne Seiler, Kendra Grotz, Kristina Auerswald, Ferdinand Engländer, Denis Strassner, Alexandra Tödt, Richard Klees, Stephan Kergomard
 
-![UI-Clinic-result.png](../../../../../Pictures/UI-Clinic-result.png)
+![UI-Clinic-result.png](img/UI-Clinic-result.png)
 
 ---
 
