@@ -111,9 +111,9 @@ Cover page - opening a running test
 
 ---
 
-## **Our journey today**
+<!-- _class: chapter-02 -->
 
-### **Table of Contents**
+## **About this Presentation**
 
 ---
 
@@ -272,13 +272,18 @@ We landed on the following categories:
 
 * Mental Model vs. Implementation Model
 * "The implementation model represents how a system (application, service, interface, etc.) works. [...] It is shaped by technical, organizational, and business constraints." <small>[Vibor Cipan. 2020, September 27. UX mental model, implementation and represented models in UX.](https://pointjupiter.com/ux-mental-model-representation-implementation-user-experience-development/)</small>
-* example: booking a flight
-  * interface is very simple: from, to, dates, number of people
-  * implementation is highly complex, checking different airlines, connections
+* ILIAS UI is often a list of functions of the implementation model
+
+---
+
+Example for Mental Model: Booking a flight
 
 ---
 
 ![booking-com_flights.png](img/booking-com_flights.png)
+
+* interface is very simple: from, to, dates, number of people,...
+* implementation is highly complex: checking different airlines, connections
 
 ---
 
@@ -448,9 +453,9 @@ Analytics and Reports. Content and sub-object created by the consuming user that
 
 <!-- _class: chapter-02 -->
 
-## Minimum Tweaks
+## **Minimum Tweaks**
 
-The minimum action we would recommend is to clean up worst offenders
+### **The minimum action we would recommend is to clean up worst offenders**
 
 ---
 
@@ -469,3 +474,10 @@ The minimum action we would recommend is to clean up worst offenders
 * Tabs are still one of the best ways to navigate between a collections of views.
 * A break in a pattern indicates that a system or grouping could be optimized.
 * By following User Intent we can sort and nest Tabs in ways that feel more intuitive and frictionless to our users.
+
+---
+
+Lots to do, let's stay in touch
+
+* ferdinand@concepts-and-training.de
+* CSS Squad in the ILIAS Discord Server
