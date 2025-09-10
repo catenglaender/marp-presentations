@@ -3,7 +3,7 @@
 marp: true
 theme: cate-theme
 paginate: false
-header: ILIAS DevConf September 2023 | cate-tms.de
+header: ILIAS DevConf September 2025 | cate-tms.de
 footer: No ILIAS on a dead planet.
 
 ---
