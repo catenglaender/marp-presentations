@@ -138,6 +138,8 @@ Cover page - opening a running test
 
 ---
 
+![bg 80% left](img/meme_maes-b-lost-in-a-field.gif)
+
 ### Issues
 
 * Users give feedback
@@ -146,6 +148,8 @@ Cover page - opening a running test
   * confused by unexpected behavior
 
 ---
+
+![bg 90% left](img/meme_cough-blow.gif)
 
 ### Previous Guidelines
 
@@ -179,6 +183,8 @@ Cover page - opening a running test
 
 ---
 
+![bg 90% left](img/meme_time-pass.gif)
+
 ### Time
 
 * "In most situations, the faster a user can complete a task, the better the experience." <small>Tom Tullis, Bill Albert. Measuring the User Experience.</small>
@@ -201,10 +207,18 @@ Cover page - opening a running test
 
 ---
 
+![meme_volume-1.gif](img/meme_volume-1.gif)
+
+![meme_volume-2.gif](img/meme_volume-2.gif)
+
+<small>https://uxdesign.cc/the-worst-volume-control-ui-in-the-world-60713dc86950</small>
+
+---
+
 ### Memory for 7 +/- 2 chunks
 
 * "In 1956, [George A.] Miller found that most people can remember about 7 chunks of information in their short-term memory."
-* 982184652390 vs. 9821 8465 2390
+* 982184652390 vs. 9821-8465-2390
 * grouping
 
 ---
@@ -268,12 +282,12 @@ We landed on the following categories:
 
 ---
 
-![bg left 90%](img/meme_perspective-pass.gif)
+![bg left 80%](img/meme_perspective-pass.gif)
 
 ### We need to think like the user
 
 * Mental Model vs. Implementation Model
-* "The implementation model represents how a system (application, service, interface, etc.) works. [...] It is shaped by technical, organizational, and business constraints." <small>[Vibor Cipan. 2020, September 27. UX mental model, implementation and represented models in UX.](https://pointjupiter.com/ux-mental-model-representation-implementation-user-experience-development/)</small>
+* "The implementation model represents how a system (application, service, interface, etc.) works. [...] It is shaped by technical, organizational, and business constraints." <small>[Vibor Cipan. UX mental model, implementation and represented models in UX.](https://pointjupiter.com/ux-mental-model-representation-implementation-user-experience-development/)</small>
 * ILIAS UI is often a list of functions of the implementation model
 
 ---
@@ -329,6 +343,8 @@ Example for Mental Model: Booking a flight
 ---
 
 ### Outliers
+
+![bg 80% left](img/meme_luigi-kid.png)
 
 ---
 
