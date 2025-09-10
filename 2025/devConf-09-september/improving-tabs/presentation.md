@@ -268,6 +268,8 @@ We landed on the following categories:
 
 ---
 
+![bg left 90%](img/meme_perspective-pass.gif)
+
 ### We need to think like the user
 
 * Mental Model vs. Implementation Model
@@ -286,6 +288,8 @@ Example for Mental Model: Booking a flight
 * implementation is highly complex: checking different airlines, connections
 
 ---
+
+![bg left 90%](img/meme_detective-daffy-investigate.gif)
 
 ### Measuring the status quo
 
