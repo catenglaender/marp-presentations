@@ -479,5 +479,5 @@ Analytics and Reports. Content and sub-object created by the consuming user that
 
 Lots to do, let's stay in touch
 
-* ferdinand@concepts-and-training.de
+* ferdinand.englaender@concepts-and-training.de
 * CSS Squad in the ILIAS Discord Server
